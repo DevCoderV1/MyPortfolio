@@ -429,6 +429,9 @@ footer {
     body {
         overflow-x: hidden;
     }
+    html {
+        display: hidden;
+    }
     nav .logo h1 {
         font-size: 36px;
     }
@@ -440,6 +443,7 @@ footer {
         flex-direction: column;
         opacity: 0.8;
         transform: translateX(100%);
+        display: none;
     }
     nav .link_bar_open {
         position: absolute;
@@ -496,6 +500,9 @@ footer {
 }
 
 @media only screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
     .user_experience_wrapper .user_skill .skills {
         width: 75px;
         height: 75px;
