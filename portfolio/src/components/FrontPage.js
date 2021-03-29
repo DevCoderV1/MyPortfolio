@@ -113,27 +113,27 @@ const FrontPage = () => {
                 <div className="user_skill">
                     <div className="skills">
                         <img src={java} alt="javascript" />
-                        <span>1-2 Years</span>
+                        <span>Javascipt</span>
                     </div>
                     <div className="skills">
                         <img src={html} alt="html" />
-                        <span>2-3 Years</span>
+                        <span>HTML</span>
                     </div>
                     <div className="skills">
                         <img src={css} alt="css" />
-                        <span>2-3 Years</span>
+                        <span>CSS</span>
                     </div>
                     <div className="skills">
                         <img src={nodejs} alt="nodejs" />
-                        <span>2-3 Years</span>
+                        <span> Node JS</span>
                     </div>
                     <div className="skills">
                         <img src={react} alt="reactjs" />
-                        <span>2 Years</span>
+                        <span>React JS</span>
                     </div>
                     <div className="skills">
                         <img src={express} alt="expressjs" />
-                        <span>1-2 Years</span>
+                        <span>Express JS</span>
                     </div>
                 </div>
                 <div>
@@ -142,15 +142,19 @@ const FrontPage = () => {
                 <div className="user_skill">
                     <div className="skills">
                         <img src={vs} alt="visualcode" />
+                        <span>Visual Studio Code</span>
                     </div>
                     <div className="skills">
                         <img src={git} alt="github" />
+                        <span>Github</span>
                     </div>
                     <div className="skills">
                         <img src={photoshop} alt="photoshop" />
+                        <span>Adobe Photoshop</span>
                     </div>
                     <div className="skills">
                         <img src={wordp} alt="wordpress" />
+                        <span>WordPress</span>
                     </div>
                 </div>
             </section>

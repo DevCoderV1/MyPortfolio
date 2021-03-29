@@ -277,23 +277,42 @@ nav .hamburger div {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.user_experience_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.8;
+    z-index: -1;
 }
 
 .user_experience_wrapper .user_skill {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     width: 60%;
-    height: 100%;
 }
 
 .user_experience_wrapper .user_skill .skills {
     width: 125px;
     height: 125px;
     border-radius: 1rem;
-    margin: 15px 10px 15px 10px;
+    margin: 25px 10px 25px 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .user_experience_wrapper .user_skill .skills img {
@@ -304,6 +323,8 @@ nav .hamburger div {
 
 .user_experience_wrapper .user_skill .skills span {
     margin-top: 5px;
+    color: black;
+    font-size: 18px;
 }
 
 
@@ -494,6 +515,9 @@ footer {
         width: 300px;
         height: 300px;
     }
+    .user_experience_wrapper .user_skill {
+        width: 60%;
+    }
     footer {
         font-size: 12px;
     }
@@ -503,11 +527,18 @@ footer {
     body {
         overflow-x: hidden;
     }
+    .user_experience_wrapper .user_skill {
+        width: 100%;
+    }
     .user_experience_wrapper .user_skill .skills {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
     }
     .phone {
         display: block;
+    }
+    .user_intro_wrapper .user_intro_container .user_summary p {
+        padding: 15px;
+        font-size: 16px;
     }
 }
