@@ -104,6 +104,18 @@ const FrontPage = () => {
                     <div className="projects">
                         <img src={image1} alt="project1" />
                     </div>
+                    <div className="projects">
+                        <img src={image1} alt="project1" />
+                    </div>
+                    <div className="projects">
+                        <img src={image1} alt="project1" />
+                    </div>
+                    <div className="projects">
+                        <img src={image1} alt="project1" />
+                    </div>
+                    <div className="projects">
+                        <img src={image1} alt="project1" />
+                    </div>
                 </div>
             </section>
             <section ref={skillRef} className="user_experience_wrapper">

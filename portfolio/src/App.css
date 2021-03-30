@@ -245,6 +245,7 @@ nav .hamburger div {
     width: 450px;
     height: 300px;
     margin: 10px;
+    flex-direction: column;
 }
 
 .user_projects_wrapper .projects_list .projects img {
@@ -252,6 +253,10 @@ nav .hamburger div {
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+.user_projects_wrapper .projects_list .projects p {
+    margin: 10px;
 }
 
 
@@ -283,6 +288,7 @@ nav .hamburger div {
 
 .user_experience_wrapper .user_header {
     color: black;
+    margin: 10px;
 }
 
 .user_experience_wrapper .user_skill {
@@ -524,7 +530,7 @@ footer {
 
 @media only screen and (max-width: 505px) {
     .user_projects_wrapper .projects_list .projects {
-        width: 300px;
+        width: 325px;
         height: auto;
     }
     .user_experience_wrapper .user_skill .skills {
@@ -546,16 +552,20 @@ footer {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 425px) {
     body {
         overflow-x: hidden;
+    }
+    .user_projects_wrapper .projects_list .projects {
+        width: 300px;
+        height: auto;
     }
     .user_experience_wrapper .user_skill {
         width: 100%;
     }
     .user_experience_wrapper .user_skill .skills {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
     }
     .phone {
         display: block;
