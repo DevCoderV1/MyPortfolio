@@ -83,6 +83,12 @@ nav .link_bar button a {
     color: white;
 }
 
+nav .link_bar button:hover {
+    color: white;
+    background-color: rgb(238, 61, 61);
+    transition: 0.5s ease-in-out;
+}
+
 nav .link_bar_open {
     display: flex;
     justify-content: space-around;
@@ -100,42 +106,22 @@ nav .link_bar_open li {
     text-shadow: 7px 10px 10px black;
 }
 
-nav .link_bar_open li:hover {
-    color: red;
-    transition: 0.4s ease-in-out;
-    border: none;
-    text-shadow: 7px 10px 10px black;
-}
-
 nav .link_bar_open button {
-    background-color: transparent;
+    background-color: rgb(238, 61, 61);
     outline: none;
     font-size: 24px;
     padding: 8px;
     cursor: pointer;
     border-radius: 0.5rem;
-    border: 1px solid white;
     color: white;
     box-shadow: 7px 7px 10px black;
     font-family: "Times New Roman", Times, serif;
+    border: none;
 }
 
 nav .link_bar_open button a {
     text-decoration: none;
     color: white;
-}
-
-nav .link_bar_open button:hover {
-    color: white;
-    background-color: rgb(238, 61, 61);
-    border: 1px solid red;
-    transition: 0.5s ease-in-out;
-}
-
-nav .link_bar button:hover {
-    color: white;
-    background-color: rgb(238, 61, 61);
-    transition: 0.5s ease-in-out;
 }
 
 
@@ -480,14 +466,41 @@ footer {
         background: -moz-linear-gradient(top left, #f6f6f0, #b6b2b2);
         background: linear-gradient(to bottom right, #f6f6f0, #b6b2b2);
         flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
         bottom: 0;
     }
     nav .link_bar_open li {
-        color: black;
-        border-bottom: none;
-        z-index: 2;
-        font-size: 1.5rem;
+        list-style-type: none;
+        font-size: 24px;
+        cursor: pointer;
+        border: none;
+        padding: 8px;
+        border-radius: 0.5rem;
+        box-shadow: 5px 5px 10px black;
+        background-color: rgb(238, 61, 61);
+        color: white;
+        border: none;
+        text-shadow: 7px 10px 10px black;
+        font-family: "Times New Roman", Times, serif;
+    }
+    nav .link_bar_open button {
+        outline: none;
+        font-size: 24px;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        border: none;
+        color: white;
+        box-shadow: 7px 7px 10px black;
+        font-family: "Times New Roman", Times, serif;
+        background-color: rgb(238, 61, 61);
+    }
+    nav .link_bar_open button a {
+        text-decoration: none;
+        color: white;
     }
     nav .hamburger {
         display: block;
