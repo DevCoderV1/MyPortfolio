@@ -48,6 +48,7 @@ const FrontPage = () => {
         }
         SetActive(!isActive)
 
+
     }
 
 
@@ -62,7 +63,7 @@ const FrontPage = () => {
     return (
         <div className="frontpage">
             <div className="frontpage_wrapper">
-                <nav>
+                <nav className={isActive ? '' : 'nav_background'}>
                     <div className="logo">
                         <h1 onClick={(e) => window.location.reload()}>MyPortfolio</h1>
                     </div>
@@ -103,11 +104,10 @@ const FrontPage = () => {
                     <div className="projects">
                         <img src={image1} alt="project1" />
                     </div>
-
                 </div>
             </section>
             <section ref={skillRef} className="user_experience_wrapper">
-                <div>
+                <div className="user_header">
                     <h2>Expertise</h2>
                 </div>
                 <div className="user_skill">
@@ -136,7 +136,7 @@ const FrontPage = () => {
                         <span>Express JS</span>
                     </div>
                 </div>
-                <div>
+                <div className="user_header">
                     <h2>Extras</h2>
                 </div>
                 <div className="user_skill">
@@ -167,13 +167,12 @@ const FrontPage = () => {
                         <img src={myself} alt="me" />
                     </div>
                     <div className="user_summary">
-                        <p>Hi, my name is Micky, a front-end web developer with experience of web design and mobile responsive application. I'm proficent on Javascript, HTML, CSS, Node JS and React JS but I will continue to improve myself to be a better programmer. In my free time I like to hangout, play games, do body workout and travel to places for trying out new delicious food.</p>
+                        <p>Hi, my name is Micky, a front-end web developer with experience in web design and mobile responsive applications. I'm proficient in Javascript, HTML, CSS, Node JS, and React JS but I will keep studying and improve my skills. In my free time I like to hang out, play games, do body workouts and travel to places for trying out new delicious food.</p>
                     </div>
                     <div className="user_contact">
                         <span>Contact me if you're interested for a chat at:</span>
                         <div className="contact_choice">
-                            <div class="phone"><a href="mailto:+9294618388" className="fa">&#xf095;</a></div>
-                            <div class="email"><a href="mailto:mickyhuang8388@gmail.com" className="material-icons">&#xe0be;</a></div>
+                            <div className="email"><a href="mailto:mickyhuang8388@gmail.com" className="material-icons">&#xe0be;</a></div>
                         </div>
                     </div>
                 </div>

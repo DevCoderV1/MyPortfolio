@@ -295,9 +295,13 @@ nav .hamburger div {
     z-index: -1;
 }
 
+.user_experience_wrapper .user_header {
+    color: black;
+}
+
 .user_experience_wrapper .user_skill {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     width: 60%;
@@ -307,7 +311,7 @@ nav .hamburger div {
     width: 125px;
     height: 125px;
     border-radius: 1rem;
-    margin: 25px 10px 25px 10px;
+    margin: 30px 10px 30px 10px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -471,10 +475,10 @@ footer {
         top: 8vh;
         right: 0;
         height: 92vh;
-        background: #c18361;
-        background: -webkit-linear-gradient(top left, #c18361, #412510);
-        background: -moz-linear-gradient(top left, #c18361, #412510);
-        background: linear-gradient(to bottom right, #c18361, #412510);
+        background: #f6f6f0;
+        background: -webkit-linear-gradient(top left, #f6f6f0, #b6b2b2);
+        background: -moz-linear-gradient(top left, #f6f6f0, #b6b2b2);
+        background: linear-gradient(to bottom right, #f6f6f0, #b6b2b2);
         flex-direction: column;
         width: 100%;
         bottom: 0;
@@ -496,6 +500,12 @@ footer {
     }
     .user_wrapper .user_links {
         width: 50%;
+    }
+    .nav_background {
+        background: #f6f6f0;
+        background: -webkit-linear-gradient(top left, #f6f6f0, #b6b2b2);
+        background: -moz-linear-gradient(top left, #f6f6f0, #b6b2b2);
+        background: linear-gradient(to bottom right, #f6f6f0, #b6b2b2);
     }
 }
 
@@ -523,7 +533,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 410px) {
     body {
         overflow-x: hidden;
     }
@@ -531,14 +541,14 @@ footer {
         width: 100%;
     }
     .user_experience_wrapper .user_skill .skills {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
     .phone {
         display: block;
     }
     .user_intro_wrapper .user_intro_container .user_summary p {
         padding: 15px;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
