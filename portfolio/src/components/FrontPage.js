@@ -124,28 +124,52 @@ const FrontPage = () => {
                 </div>
                 <div className="user_skill">
                     <div className="skills">
-                        <img src={java} alt="javascript" />
-                        <span>Javascipt</span>
+                        <div className="skill_image">
+                            <img src={java} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>Javascipt</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={html} alt="html" />
-                        <span>HTML</span>
+                        <div className="skill_image">
+                            <img src={html} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>HTML</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={css} alt="css" />
-                        <span>CSS</span>
+                        <div className="skill_image">
+                            <img src={css} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>CSS</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={nodejs} alt="nodejs" />
-                        <span> Node JS</span>
+                        <div className="skill_image">
+                            <img src={nodejs} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>Node JS</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={react} alt="reactjs" />
-                        <span>React JS</span>
+                        <div className="skill_image">
+                            <img src={react} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>React JS</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={express} alt="expressjs" />
-                        <span>Express JS</span>
+                        <div className="skill_image">
+                            <img src={express} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>Express JS</span>
+                        </div>
                     </div>
                 </div>
                 <div className="user_header">
@@ -153,20 +177,36 @@ const FrontPage = () => {
                 </div>
                 <div className="user_skill">
                     <div className="skills">
-                        <img src={vs} alt="visualcode" />
-                        <span>Visual Studio Code</span>
+                        <div className="skill_image">
+                            <img src={git} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>Github</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={git} alt="github" />
-                        <span>Github</span>
+                        <div className="skill_image">
+                            <img src={vs} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>Visual Studio</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={photoshop} alt="photoshop" />
-                        <span>Adobe Photoshop</span>
+                        <div className="skill_image">
+                            <img src={photoshop} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>Photoshop</span>
+                        </div>
                     </div>
                     <div className="skills">
-                        <img src={wordp} alt="wordpress" />
-                        <span>WordPress</span>
+                        <div className="skill_image">
+                            <img src={wordp} alt="javascript" />
+                        </div>
+                        <div className="skill_tag">
+                            <span>WordPress</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -182,7 +222,7 @@ const FrontPage = () => {
                         <p>Hi, my name is Micky, a front-end web developer with experience in web design and mobile responsive applications. I'm proficient in Javascript, HTML, CSS, Node JS, and React JS but I will keep studying and improve my skills. In my free time I like to hang out, play games, do body workouts and travel to places for trying out new delicious food.</p>
                     </div>
                     <div className="user_contact">
-                        <span>Contact me if you're interested:</span>
+                        <span>Contact me if you're interested for a chat at:</span>
                         <div className="contact_choice">
                             <div className="email"><a href="mailto:mickyhuang8388@gmail.com" className="material-icons">&#xe0be;</a></div>
                         </div>
