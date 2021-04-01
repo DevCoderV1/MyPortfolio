@@ -37,7 +37,6 @@ nav .logo h1 {
     font-weight: bold;
     width: 60%;
     text-align: center;
-    cursor: pointer;
     text-shadow: 7px 10px 10px black;
 }
 
@@ -66,14 +65,14 @@ nav .link_bar li:hover {
 }
 
 nav .link_bar button {
-    background-color: transparent;
+    background-color: rgb(238, 61, 61);
     outline: none;
     font-size: 24px;
     padding: 8px;
     cursor: pointer;
     border-radius: 0.5rem;
-    border: 1px solid white;
     color: white;
+    border: none;
     box-shadow: 7px 7px 10px black;
     font-family: "Times New Roman", Times, serif;
 }
@@ -386,8 +385,8 @@ nav .hamburger div {
 }
 
 .user_intro_wrapper .user_intro_container .user_image {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-color: black;
 }
@@ -571,8 +570,8 @@ footer {
         width: 100%;
     }
     .user_intro_wrapper .user_intro_container .user_image {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     .user_experience_wrapper .user_skill {
         width: 60%;

@@ -65,7 +65,7 @@ const FrontPage = () => {
             <div className="frontpage_wrapper">
                 <nav className={isActive ? '' : 'nav_background'}>
                     <div className="logo">
-                        <h1 onClick={(e) => window.location.reload()}>MyPortfolio</h1>
+                        <h1>MyPortfolio</h1>
                     </div>
                     <ul className={isActive ? 'link_bar' : 'link_bar_open'}>
                         <li onClick={projectsfocus}>Projects</li>
@@ -101,12 +101,6 @@ const FrontPage = () => {
                     <h2>Projects</h2>
                 </div>
                 <div className="projects_list">
-                    <div className="projects">
-                        <img src={image1} alt="project1" />
-                    </div>
-                    <div className="projects">
-                        <img src={image1} alt="project1" />
-                    </div>
                     <div className="projects">
                         <img src={image1} alt="project1" />
                     </div>
