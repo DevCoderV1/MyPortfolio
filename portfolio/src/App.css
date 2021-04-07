@@ -59,7 +59,7 @@ nav .link_bar li {
 
 nav .link_bar li:hover {
     color: red;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in;
     border: none;
     text-shadow: 7px 10px 10px black;
 }
@@ -80,12 +80,6 @@ nav .link_bar button {
 nav .link_bar button a {
     text-decoration: none;
     color: white;
-}
-
-nav .link_bar button:hover {
-    color: white;
-    background-color: rgb(238, 61, 61);
-    transition: 0.5s ease-in-out;
 }
 
 nav .link_bar_open {
@@ -244,6 +238,7 @@ nav .hamburger div {
     height: 300px;
     margin: 10px;
     flex-direction: column;
+    position: relative;
 }
 
 .user_projects_wrapper .projects_list .projects img {
@@ -251,10 +246,6 @@ nav .hamburger div {
     width: 100%;
     height: 100%;
     cursor: pointer;
-}
-
-.user_projects_wrapper .projects_list .projects p {
-    margin: 10px;
 }
 
 
@@ -306,7 +297,7 @@ nav .hamburger div {
 
 .user_experience_wrapper .user_skill .skills {
     width: 100px;
-    height: 100px;
+    height: auto;
     border-radius: 1rem;
     margin: 30px 10px 30px 10px;
     display: flex;
@@ -323,12 +314,12 @@ nav .hamburger div {
 
 .user_experience_wrapper .user_skill .skills .skill_image img {
     object-fit: contain;
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
 
 .user_experience_wrapper .user_skill .skills .skill_tag {
-    margin: 10px;
+    margin: 5px;
     color: black;
 }
 
@@ -540,7 +531,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 515px) {
     .user_projects_wrapper .projects_list .projects {
         width: 325px;
         height: auto;
@@ -563,7 +554,6 @@ footer {
         color: black;
     }
     .user_experience_wrapper .user_skill .skills .skill_tag span {
-        padding: 10px;
         font-size: 16px;
     }
     .user_intro_wrapper .user_intro_container {
@@ -593,16 +583,14 @@ footer {
         width: 90%;
     }
     .user_experience_wrapper .user_skill {
-        width: 100%;
+        width: 95%;
     }
-    .user_experience_wrapper .user_skill .skills {
-        width: 70px;
-        height: 70px;
+    .user_experience_wrapper .user_skill .skills .skill_tag {
+        margin: 5px;
+        color: black;
     }
-    .user_experience_wrapper .user_skill .skills span {
-        width: 100%;
+    .user_experience_wrapper .user_skill .skills .skill_tag span {
         font-size: 14px;
-        padding: 10px;
     }
     .phone {
         display: block;

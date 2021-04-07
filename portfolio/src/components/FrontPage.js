@@ -50,8 +50,6 @@ const FrontPage = () => {
 
 
     }
-
-
     useEffect(() => {
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
@@ -104,6 +102,7 @@ const FrontPage = () => {
                     <div className="projects">
                         <img src={image1} alt="project1" />
                     </div>
+
                     <div className="projects">
                         <img src={image1} alt="project1" />
                     </div>
