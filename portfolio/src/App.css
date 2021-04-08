@@ -295,6 +295,10 @@ nav .hamburger div {
     width: 60%;
 }
 
+.user_experience_wrapper .user_skill>* {
+    flex: 0 1 25%;
+}
+
 .user_experience_wrapper .user_skill .skills {
     width: 100px;
     height: auto;
