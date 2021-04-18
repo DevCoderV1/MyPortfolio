@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main: white;
+    --text: black;
+    --box_shadow: 8px 4px 3px black;
+}
+
 .frontpage {
     min-height: 100vh;
     color: white;
@@ -47,7 +53,7 @@ nav .link_bar {
     width: 60%;
 }
 
-nav .link_bar li {
+nav .link_bar .nav_btn {
     list-style-type: none;
     font-size: 24px;
     cursor: pointer;
@@ -57,7 +63,7 @@ nav .link_bar li {
     text-shadow: 7px 10px 10px black;
 }
 
-nav .link_bar li:hover {
+nav .link_bar .nav_btn:hover {
     color: red;
     transition: 0.4s ease-in;
     border: none;
@@ -89,7 +95,7 @@ nav .link_bar_open {
     width: 60%;
 }
 
-nav .link_bar_open li {
+nav .link_bar_open .nav_btn {
     list-style-type: none;
     font-size: 24px;
     cursor: pointer;
@@ -271,7 +277,7 @@ nav .hamburger div {
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.5;
     z-index: -1;
 }
 
@@ -486,7 +492,7 @@ footer {
         width: 100%;
         bottom: 0;
     }
-    nav .link_bar_open li {
+    nav .link_bar_open .nav_btn {
         list-style-type: none;
         font-size: 24px;
         cursor: pointer;

@@ -1,4 +1,5 @@
-import { useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll';
 import image1 from '../images/image1.jpg'
 import myself from '../images/myself.jpg'
 import java from '../images/javascript.png'
@@ -11,34 +12,13 @@ import git from '../images/git.png'
 import vs from '../images/visualcode.png'
 import photoshop from '../images/photoshop.png'
 import wordp from '../images/wordpress.png'
-import myresume from '../documents/resume.pdf'
+import myresume from '../documents/MyResume.pdf'
 
 
 
 const FrontPage = () => {
 
     const [isActive, SetActive] = useState(true)
-    const projectsRef = useRef();
-    const skillRef = useRef();
-    const introRef = useRef();
-
-    const skillfocus = () => {
-        skillRef.current.scrollIntoView();
-        document.body.style.overflow = "visible"
-        SetActive(!isActive)
-
-    }
-    const projectsfocus = () => {
-        projectsRef.current.scrollIntoView()
-        document.body.style.overflow = "visible"
-        SetActive(!isActive)
-    }
-
-    const introFocus = () => {
-        introRef.current.scrollIntoView();
-        document.body.style.overflow = "visible"
-        SetActive(!isActive)
-    }
 
     const ToggleNav = () => {
         if (!isActive) {
@@ -66,9 +46,30 @@ const FrontPage = () => {
                         <h1>MyPortfolio</h1>
                     </div>
                     <ul className={isActive ? 'link_bar' : 'link_bar_open'}>
-                        <li onClick={projectsfocus}>Projects</li>
-                        <li onClick={skillfocus}>Experiences</li>
-                        <li onClick={introFocus}>Contact</li>
+                        <Link className="nav_btn"
+                            activeClass="active"
+                            to="project"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Project</Link>
+                        <Link className="nav_btn"
+                            activeClass="active"
+                            to="skill"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Experiences</Link>
+                        <Link className="nav_btn"
+                            activeClass="active"
+                            to="intro"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >Contact</Link>
                         <button><a href={myresume} download="resume">Resume</a></button>
                     </ul>
                     <div onClick={ToggleNav} className="hamburger">
@@ -94,7 +95,7 @@ const FrontPage = () => {
                     </div>
                 </div>
             </div>
-            <section ref={projectsRef} className="user_projects_wrapper">
+            <section className="user_projects_wrapper" id="project">
                 <div className="user_projects_header">
                     <h2>Projects</h2>
                 </div>
@@ -111,7 +112,7 @@ const FrontPage = () => {
                     </div>
                 </div>
             </section>
-            <section ref={skillRef} className="user_experience_wrapper">
+            <section className="user_experience_wrapper" id="skill">
                 <div className="user_header">
                     <h2>Expertise</h2>
                 </div>
@@ -203,7 +204,7 @@ const FrontPage = () => {
                     </div>
                 </div>
             </section>
-            <section ref={introRef} className="user_intro_wrapper">
+            <section className="user_intro_wrapper" id="intro">
                 <div className="user_intro_header">
                     <h2>About Me</h2>
                 </div>
