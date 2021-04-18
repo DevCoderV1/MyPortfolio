@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-scroll';
+import { Link, ScrollLink } from 'react-scroll';
 import image1 from '../images/image1.jpg'
 import myself from '../images/myself.jpg'
 import java from '../images/javascript.png'
@@ -12,13 +12,28 @@ import git from '../images/git.png'
 import vs from '../images/visualcode.png'
 import photoshop from '../images/photoshop.png'
 import wordp from '../images/wordpress.png'
-import myresume from '../documents/MyResume.pdf'
+import Resume from '../documents/MyResume.pdf'
 
 
 
 const FrontPage = () => {
 
     const [isActive, SetActive] = useState(true)
+
+    const skillfocus = () => {
+        document.body.style.overflow = "visible"
+        SetActive(!isActive)
+
+    }
+    const projectsfocus = () => {
+        document.body.style.overflow = "visible"
+        SetActive(!isActive)
+    }
+
+    const introFocus = () => {
+        document.body.style.overflow = "visible"
+        SetActive(!isActive)
+    }
 
     const ToggleNav = () => {
         if (!isActive) {
@@ -27,9 +42,8 @@ const FrontPage = () => {
             document.body.style.overflow = "hidden"
         }
         SetActive(!isActive)
-
-
     }
+
     useEffect(() => {
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
@@ -40,61 +54,60 @@ const FrontPage = () => {
 
     return (
         <div className="frontpage">
-            <div className="frontpage_wrapper">
-                <nav className={isActive ? '' : 'nav_background'}>
-                    <div className="logo">
-                        <h1>MyPortfolio</h1>
+            <nav className={isActive ? '' : 'nav_background'}>
+                <div className="logo">
+                    <h1>MyPortfolio</h1>
+                </div>
+                <ul className={isActive ? 'link_bar' : 'link_bar_open'}>
+                    <Link onClick={projectsfocus} className="nav_btn"
+                        activeClass="active"
+                        to="project"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >Project</Link>
+                    <Link onClick={skillfocus} className="nav_btn"
+                        activeClass="active"
+                        to="skill"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >Experiences</Link>
+                    <Link onClick={introFocus} className="nav_btn"
+                        activeClass="active"
+                        to="intro"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >Contact</Link>
+                    <button><a href={Resume} download="Resume">Resume</a></button>
+                </ul>
+                <div onClick={ToggleNav} className="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            <div className="user_wrapper">
+                <h1>Micky Huang</h1>
+                <span>Front-End Web Developer</span>
+                <div className="user_links">
+                    <div onClick={() => {
+                        window.open("https://github.com/DevCoderV1");
+                    }} className="link_icon">
+                        <i className="fa fa-github"></i>
                     </div>
-                    <ul className={isActive ? 'link_bar' : 'link_bar_open'}>
-                        <Link className="nav_btn"
-                            activeClass="active"
-                            to="project"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}
-                        >Project</Link>
-                        <Link className="nav_btn"
-                            activeClass="active"
-                            to="skill"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}
-                        >Experiences</Link>
-                        <Link className="nav_btn"
-                            activeClass="active"
-                            to="intro"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}
-                        >Contact</Link>
-                        <button><a href={myresume} download="resume">Resume</a></button>
-                    </ul>
-                    <div onClick={ToggleNav} className="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </nav>
-                <div className="user_wrapper">
-                    <h1>Micky Huang</h1>
-                    <span>Front-End Web Developer</span>
-                    <div className="user_links">
-                        <div onClick={() => {
-                            window.open("https://github.com/DevCoderV1");
-                        }} className="link_icon">
-                            <i className="fa fa-github"></i>
-                        </div>
-                        <div onClick={() => {
-                            window.open("https://www.linkedin.com/in/micky-huang-762b2018a/");
-                        }} className="link_icon">
-                            <i className="fa fa-linkedin-square" />
-                        </div>
+                    <div onClick={() => {
+                        window.open("https://www.linkedin.com/in/micky-huang-762b2018a/");
+                    }} className="link_icon">
+                        <i className="fa fa-linkedin-square" />
                     </div>
                 </div>
             </div>
+
             <section className="user_projects_wrapper" id="project">
                 <div className="user_projects_header">
                     <h2>Projects</h2>
@@ -216,7 +229,7 @@ const FrontPage = () => {
                         <p>Hi, my name is Micky, a front-end web developer with experience in web design and mobile responsive applications. I'm proficient in Javascript, HTML, CSS, Node JS, and React JS but I will keep studying and improve my skills. In my free time I like to hang out, play games, do body workouts and travel to places for trying out new delicious food.</p>
                     </div>
                     <div className="user_contact">
-                        <span>Contact me if you're interested for a chat at:</span>
+                        <span>Contact me if you're interested for a chat:</span>
                         <div className="contact_choice">
                             <div className="email"><a href="mailto:mickyhuang8388@gmail.com" className="material-icons">&#xe0be;</a></div>
                         </div>
