@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, ScrollLink } from 'react-scroll';
+import { Link } from 'react-scroll';
 import image1 from '../images/image1.jpg'
 import myself from '../images/myself.jpg'
 import java from '../images/javascript.png'
@@ -229,7 +229,7 @@ const FrontPage = () => {
                         <p>Hi, my name is Micky, a front-end web developer with experience in web design and mobile responsive applications. I'm proficient in Javascript, HTML, CSS, Node JS, and React JS but I will keep studying and improve my skills. In my free time I like to hang out, play games, do body workouts and travel to places for trying out new delicious food.</p>
                     </div>
                     <div className="user_contact">
-                        <span>Contact me if you're interested for a chat:</span>
+                        <span>Contact me if you're interested for chat</span>
                         <div className="contact_choice">
                             <div className="email"><a href="mailto:mickyhuang8388@gmail.com" className="material-icons">&#xe0be;</a></div>
                         </div>
