@@ -130,7 +130,7 @@ nav .hamburger {
 
 nav .hamburger div {
   width: 30px;
-  height: 3px;
+  height: 2px;
   background-color: white;
   margin: 5px;
 }
@@ -457,11 +457,8 @@ footer {
   body {
     overflow-x: hidden;
   }
-  html {
-    display: hidden;
-  }
   nav .logo h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
   nav .link_bar {
     position: absolute;
@@ -488,7 +485,7 @@ footer {
   }
   nav .link_bar_open .nav_btn {
     list-style-type: none;
-    font-size: 24px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     padding: 8px;
