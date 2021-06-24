@@ -1,27 +1,21 @@
 import Project from "./Project";
 import "./ProjectList.css";
-import testimageg from "../images/image1.jpg";
+import project1 from "../images/project1.jpg";
+import project2 from "../images/Project2.JPG";
 
 const Projectlist = () => {
   const Projects = [
     {
       _project_id: 1,
       _project_name: "Typing Challenge",
-      _project_image: testimageg,
+      _project_image: project1,
       _project_github: "",
       _project_link: "https://type-challenge.netlify.app/",
     },
     {
       _project_id: 2,
       _project_name: "Typhoon Link",
-      _project_image: testimageg,
-      _project_github: "",
-      _project_link: "https://typhoonlink.netlify.app/",
-    },
-    {
-      _project_id: 3,
-      _project_name: "Typhoon Link",
-      _project_image: testimageg,
+      _project_image: project2,
       _project_github: "",
       _project_link: "https://typhoonlink.netlify.app/",
     },
