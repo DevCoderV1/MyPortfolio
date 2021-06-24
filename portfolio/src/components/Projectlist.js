@@ -1,6 +1,7 @@
 import Project from "./Project";
 import "./ProjectList.css";
 import testimageg from "../images/project1.jpg";
+
 const Projectlist = () => {
   const Projects = [
     {
@@ -12,20 +13,6 @@ const Projectlist = () => {
     },
     {
       _project_id: 2,
-      _project_name: "Typhoon Link",
-      _project_image: testimageg,
-      _project_github: "",
-      _project_link: "https://typhoonlink.netlify.app/",
-    },
-    {
-      _project_id: 3,
-      _project_name: "Typhoon Link",
-      _project_image: testimageg,
-      _project_github: "",
-      _project_link: "https://typhoonlink.netlify.app/",
-    },
-    {
-      _project_id: 4,
       _project_name: "Typhoon Link",
       _project_image: testimageg,
       _project_github: "",
