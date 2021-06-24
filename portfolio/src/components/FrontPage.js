@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import Projectlist from "./Projectlist";
 import myself from "../images/myself.jpg";
 import java from "../images/javascript.png";
 import html from "../images/html.png";
