@@ -191,23 +191,8 @@ nav .hamburger div {
   align-items: center;
   position: relative;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-.user_projects_wrapper .user_projects_header {
-  padding: 10px;
-  z-index: 2;
   width: 100%;
-  min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.user_projects_wrapper .user_projects_header h2 {
-  text-shadow: 8px 4px 3px black;
-  font-size: 32px;
-  text-align: center;
+  min-height: 100vh;
 }
 
 .user_projects_wrapper::after {
@@ -220,34 +205,6 @@ nav .hamburger div {
   z-index: 1;
   background-color: grey;
   opacity: 0.3;
-  min-height: 100vh;
-}
-
-.user_projects_wrapper .projects_list {
-  display: flex;
-  z-index: 2;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 90vh;
-  align-items: center;
-}
-
-.user_projects_wrapper .projects_list .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-  height: 300px;
-  margin: 10px;
-  flex-direction: column;
-  position: relative;
-}
-
-.user_projects_wrapper .projects_list .projects img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
 }
 
 /*---------User Coding experience section------------------*/
@@ -534,10 +491,6 @@ footer {
 }
 
 @media only screen and (max-width: 515px) {
-  .user_projects_wrapper .projects_list .projects {
-    width: 325px;
-    height: auto;
-  }
   .user_experience_wrapper .user_skill .skills {
     width: 75px;
     height: 75px;
@@ -577,12 +530,9 @@ footer {
   body {
     overflow-x: hidden;
   }
-  .user_projects_wrapper .projects_list .projects {
-    width: 300px;
-    height: auto;
-  }
+
   .user_experience_wrapper {
-    width: 90%;
+    width: 100%;
   }
   .user_experience_wrapper .user_skill {
     width: 95%;

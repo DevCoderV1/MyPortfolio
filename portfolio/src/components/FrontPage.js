@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import image1 from "../images/image1.jpg";
+import Projectlist from "./Projectlist";
 import myself from "../images/myself.jpg";
 import java from "../images/javascript.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
-import nodejs from "../images/nodejs.png";
 import react from "../images/reactjs.png";
 import express from "../images/expressjs.png";
 import git from "../images/git.png";
@@ -13,7 +12,6 @@ import vs from "../images/visualcode.png";
 import photoshop from "../images/photoshop.png";
 import wordp from "../images/wordpress.png";
 import Resume from "../documents/MyResume.pdf";
-import project1 from "../images/project1.JPG";
 
 const FrontPage = () => {
   const [isActive, SetActive] = useState(true);
@@ -125,28 +123,8 @@ const FrontPage = () => {
           </div>
         </div>
       </div>
-
       <section className="user_projects_wrapper" id="project">
-        <div className="user_projects_header">
-          <h2>Projects</h2>
-        </div>
-        <div className="projects_list">
-          <div className="projects">
-            <img
-              onClick={() => {
-                window.open("https://type-challenge.netlify.app/");
-              }}
-              src={project1}
-              alt="project1"
-            />
-          </div>
-          <div className="projects">
-            <img src={image1} alt="project1" />
-          </div>
-          <div className="projects">
-            <img src={image1} alt="project1" />
-          </div>
-        </div>
+        <Projectlist />
       </section>
       <section className="user_experience_wrapper" id="skill">
         <div className="user_header">
@@ -179,7 +157,7 @@ const FrontPage = () => {
           </div>
           <div className="skills">
             <div className="skill_image">
-              <img src={nodejs} alt="javascript" />
+              <img src="./images/nodejs.png" alt="javascript" />
             </div>
             <div className="skill_tag">
               <span>Node JS</span>
