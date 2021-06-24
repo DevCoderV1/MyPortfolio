@@ -1,6 +1,6 @@
 import Project from "./Project";
 import "./ProjectList.css";
-import project1 from "../images/project1.jpg";
+import project1 from "../images/project1.JPG";
 import project2 from "../images/Project2.JPG";
 
 const Projectlist = () => {
