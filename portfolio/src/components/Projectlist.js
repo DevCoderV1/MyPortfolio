@@ -18,6 +18,13 @@ const Projectlist = () => {
       _project_github: "",
       _project_link: "https://typhoonlink.netlify.app/",
     },
+    {
+      _project_id: 3,
+      _project_name: "Typhoon Link",
+      _project_image: testimageg,
+      _project_github: "",
+      _project_link: "https://typhoonlink.netlify.app/",
+    },
   ];
 
   return (
