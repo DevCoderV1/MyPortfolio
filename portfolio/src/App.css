@@ -55,7 +55,7 @@ nav .link_bar {
 
 nav .link_bar .nav_btn {
   list-style-type: none;
-  font-size: 24px;
+  font-size: 22px;
   cursor: pointer;
   border: none;
   padding: 8px;
@@ -72,7 +72,6 @@ nav .link_bar .nav_btn:hover {
 nav .link_bar button {
   background-color: rgb(238, 61, 61);
   outline: none;
-  font-size: 24px;
   padding: 8px;
   cursor: pointer;
   border-radius: 0.5rem;
@@ -85,6 +84,7 @@ nav .link_bar button {
 nav .link_bar button a {
   text-decoration: none;
   color: white;
+  font-size: 22px;
 }
 
 nav .link_bar_open {
@@ -158,7 +158,7 @@ nav .hamburger div {
   font-size: 24px;
   text-shadow: 7px 10px 6px black;
   text-align: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 .user_wrapper .user_links {
@@ -291,6 +291,7 @@ nav .hamburger div {
 
 .user_experience_wrapper .user_skill .skills .skill_tag span {
   font-size: 16px;
+  font-weight: 600;
 }
 
 /*------------------User Introducion section-------------------*/
@@ -341,8 +342,8 @@ nav .hamburger div {
 }
 
 .user_intro_wrapper .user_intro_container .user_image {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background-color: black;
 }
@@ -352,7 +353,7 @@ nav .hamburger div {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
 }
 
 .user_intro_wrapper .user_intro_container .user_summary {

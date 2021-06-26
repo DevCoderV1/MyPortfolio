@@ -10,6 +10,7 @@ const Project = ({ _project_name, _project_link, _project_image }) => {
     >
       <img src={_project_image} alt="test1" />
       <div className={display ? "show_project_btn" : "hide_project_btn"}>
+        <h1>{_project_name}</h1>
         <button>GitHub</button>
         <button
           onClick={() => {

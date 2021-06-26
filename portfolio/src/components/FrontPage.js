@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import Projectlist from "./Projectlist";
 import myself from "../images/myself.jpg";
 import java from "../images/javascript.png";
+import nodejs from "../images/nodejs.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
 import react from "../images/reactjs.png";
@@ -157,7 +158,7 @@ const FrontPage = () => {
           </div>
           <div className="skills">
             <div className="skill_image">
-              <img src="./images/nodejs.png" alt="javascript" />
+              <img src={nodejs} alt="javascript" />
             </div>
             <div className="skill_tag">
               <span>Node JS</span>
@@ -231,13 +232,13 @@ const FrontPage = () => {
               Hi, my name is Micky, a front-end web developer with experience in
               web design and mobile responsive applications. I'm proficient in
               Javascript, HTML, CSS, Node JS, and React JS but I will keep
-              studying and improve my skills. In my free time I like to hang
-              out, play games, do body workouts and travel to places for trying
-              out new delicious food.
+              advancing myself to learn more. I am a easy-going person to talk
+              and hangout. If we not able to work as a team but I would also be
+              happy to be your friend.
             </p>
           </div>
           <div className="user_contact">
-            <span>Contact me if you're interested for chat</span>
+            <span>Contact me if you're interested for a chat</span>
             <div className="contact_choice">
               <div className="email">
                 <a
