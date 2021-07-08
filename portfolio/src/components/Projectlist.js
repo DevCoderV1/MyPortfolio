@@ -21,7 +21,7 @@ const Projectlist = () => {
       _project_link: "https://typhoonlink.netlify.app/",
     },
     {
-      _project_id: 2,
+      _project_id: 3,
       _project_name: "Password Generator",
       _project_image: project3,
       _project_github: "https://github.com/DevCoderV1/Password_Generator",
