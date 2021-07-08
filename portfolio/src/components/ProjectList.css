@@ -26,12 +26,13 @@
   align-items: center;
   margin: auto;
   width: 80%;
+  gap: 10px;
 }
 .project {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px auto;
+  margin: auto;
   text-align: center;
   position: relative;
   overflow: hidden;
