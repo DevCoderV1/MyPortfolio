@@ -209,14 +209,6 @@ const FrontPage = () => {
               <span>Photoshop</span>
             </div>
           </div>
-          <div className="skills">
-            <div className="skill_image">
-              <img src={wordp} alt="javascript" />
-            </div>
-            <div className="skill_tag">
-              <span>WordPress</span>
-            </div>
-          </div>
         </div>
       </section>
       <section className="user_intro_wrapper" id="intro">
