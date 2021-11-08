@@ -244,7 +244,7 @@ const FrontPage = () => {
           </div>
         </div>
       </section>
-      <footer>Copyright &#169; By Micky Huang 2020-Present MyPortfolio</footer>
+      <footer>Copyright &#169; By Micky Huang 2021-Present MyPortfolio</footer>
     </div>
   );
 };
