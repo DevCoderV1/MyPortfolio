@@ -7,12 +7,13 @@ import nodejs from "../images/nodejs.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
 import react from "../images/reactjs.png";
-import express from "../images/expressjs.png";
 import git from "../images/git.png";
 import vs from "../images/visualcode.png";
 import photoshop from "../images/photoshop.png";
-import wordp from "../images/wordpress.png";
 import Resume from "../documents/MyResume.pdf";
+
+const year = new Date();
+const thisyear = year.getFullYear();
 
 const FrontPage = () => {
   const [isActive, SetActive] = useState(true);
@@ -172,14 +173,6 @@ const FrontPage = () => {
               <span>React JS</span>
             </div>
           </div>
-          <div className="skills">
-            <div className="skill_image">
-              <img src={express} alt="javascript" />
-            </div>
-            <div className="skill_tag">
-              <span>Express JS</span>
-            </div>
-          </div>
         </div>
         <div className="user_header">
           <h2>Extras</h2>
@@ -244,7 +237,9 @@ const FrontPage = () => {
           </div>
         </div>
       </section>
-      <footer>Copyright &#169; By Micky Huang 2021-Present MyPortfolio</footer>
+      <footer>
+        Copyright &#169; By Micky Huang {thisyear}-Present MyPortfolio
+      </footer>
     </div>
   );
 };
