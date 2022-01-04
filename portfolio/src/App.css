@@ -30,16 +30,16 @@ nav {
   min-height: 8vh;
   align-items: center;
   background-color: rgba(39, 35, 35, 0.8);
+  width: 100%;
+  height: 100%;
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: 4;
 }
 
 nav .logo h1 {
-  font-size: 48px;
+  font-size: 2.5rem;
   font-weight: bold;
   width: 60%;
   text-align: center;
@@ -65,7 +65,7 @@ nav .link_bar .nav_btn {
 
 nav .link_bar .nav_btn:hover {
   color: red;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
   border: none;
 }
 
@@ -84,7 +84,7 @@ nav .link_bar button {
 nav .link_bar button a {
   text-decoration: none;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 nav .link_bar_open {
@@ -96,7 +96,7 @@ nav .link_bar_open {
 
 nav .link_bar_open .nav_btn {
   list-style-type: none;
-  font-size: 24px;
+  font-size: 22px;
   cursor: pointer;
   border: none;
   padding: 8px;
@@ -106,19 +106,19 @@ nav .link_bar_open .nav_btn {
 nav .link_bar_open button {
   background-color: rgb(238, 61, 61);
   outline: none;
-  font-size: 24px;
   padding: 8px;
   cursor: pointer;
   border-radius: 0.5rem;
   color: white;
+  border: none;
   box-shadow: 7px 7px 10px black;
   font-family: 'Times New Roman', Times, serif;
-  border: none;
 }
 
 nav .link_bar_open button a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 
 /*------------------hamburger-------------------*/
@@ -314,7 +314,7 @@ nav .hamburger div {
   left: 0;
   background-color: grey;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .user_intro_wrapper .user_intro_header {
@@ -378,24 +378,17 @@ nav .hamburger div {
   justify-content: center;
   align-items: center;
 }
-
-.user_intro_wrapper .user_intro_container .user_contact .contact_choice div {
-  width: 64px;
-  height: 64px;
-  border-radius: 1rem;
-  margin: 10px;
+.user_intro_wrapper .user_intro_container .user_contact .contact_choice button {
+  background-color: rgb(238, 61, 61);
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 10px;
+  outline: none;
+  margin-top: 1rem;
   cursor: pointer;
-}
-
-.user_intro_wrapper .user_intro_container .user_contact .contact_choice div a {
-  text-decoration: none;
-  color: rgb(238, 61, 61);
-  font-size: 64px;
-  object-fit: contain;
-}
-
-.phone {
-  display: none;
+  font-size: 0.8rem;
+  color: rgb(243, 240, 240);
+  font-size: 1rem;
 }
 
 /*-------------Footer sectopm--------------*/
@@ -443,7 +436,7 @@ footer {
   }
   nav .link_bar_open .nav_btn {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
     border: none;
     padding: 8px;
@@ -457,7 +450,7 @@ footer {
   }
   nav .link_bar_open button {
     outline: none;
-    font-size: 24px;
+    font-size: 22px;
     padding: 8px;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -517,8 +510,8 @@ footer {
     width: 100%;
   }
   .user_intro_wrapper .user_intro_container .user_image {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   .user_experience_wrapper .user_skill {
     width: 60%;
@@ -550,7 +543,7 @@ footer {
     display: block;
   }
   .user_intro_wrapper .user_intro_container .user_summary p {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .fa-linkedin-square:before,
   .fa-github:before {

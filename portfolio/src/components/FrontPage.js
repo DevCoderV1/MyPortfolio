@@ -1,60 +1,60 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import Projectlist from "./Projectlist";
-import myself from "../images/myself.jpg";
-import java from "../images/javascript.png";
-import nodejs from "../images/nodejs.png";
-import html from "../images/html.png";
-import css from "../images/css.png";
-import react from "../images/reactjs.png";
-import git from "../images/git.png";
-import vs from "../images/visualcode.png";
-import photoshop from "../images/photoshop.png";
-import Resume from "../documents/MyResume.pdf";
+import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
+import Projectlist from './Projectlist'
+import myself from '../images/myself.jpg'
+import java from '../images/javascript.png'
+import nodejs from '../images/nodejs.png'
+import html from '../images/html.png'
+import css from '../images/css.png'
+import react from '../images/reactjs.png'
+import git from '../images/git.png'
+import vs from '../images/visualcode.png'
+import photoshop from '../images/photoshop.png'
+import Resume from '../documents/MyResume.pdf'
 
-const year = new Date();
-const thisyear = year.getFullYear();
+const year = new Date()
+const thisyear = year.getFullYear()
 
 const FrontPage = () => {
-  const [isActive, SetActive] = useState(true);
+  const [isActive, SetActive] = useState(true)
 
   const skillfocus = () => {
-    document.body.style.overflow = "visible";
-    SetActive(!isActive);
-  };
+    document.body.style.overflow = 'visible'
+    SetActive(!isActive)
+  }
   const projectsfocus = () => {
-    document.body.style.overflow = "visible";
-    SetActive(!isActive);
-  };
+    document.body.style.overflow = 'visible'
+    SetActive(!isActive)
+  }
 
   const introFocus = () => {
-    document.body.style.overflow = "visible";
-    SetActive(!isActive);
-  };
+    document.body.style.overflow = 'visible'
+    SetActive(!isActive)
+  }
 
   const ToggleNav = () => {
     if (!isActive) {
-      document.body.style.overflow = "visible";
+      document.body.style.overflow = 'visible'
     } else {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden'
     }
-    SetActive(!isActive);
-  };
+    SetActive(!isActive)
+  }
 
   useEffect(() => {
     window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-    SetActive(true);
-  }, []);
+      window.scrollTo(0, 0)
+    }
+    SetActive(true)
+  }, [])
 
   return (
     <div className="frontpage">
-      <nav className={isActive ? "" : "nav_background"}>
+      <nav className={isActive ? '' : 'nav_background'}>
         <div className="logo">
           <h1>MyPortfolio</h1>
         </div>
-        <ul className={isActive ? "link_bar" : "link_bar_open"}>
+        <ul className={isActive ? 'link_bar' : 'link_bar_open'}>
           <Link
             onClick={projectsfocus}
             className="nav_btn"
@@ -65,7 +65,7 @@ const FrontPage = () => {
             offset={-70}
             duration={500}
           >
-            Project
+            Projects
           </Link>
           <Link
             onClick={skillfocus}
@@ -77,7 +77,7 @@ const FrontPage = () => {
             offset={-70}
             duration={500}
           >
-            Experiences
+            Skills
           </Link>
           <Link
             onClick={introFocus}
@@ -93,7 +93,7 @@ const FrontPage = () => {
           </Link>
           <button>
             <a href={Resume} download="Resume">
-              Resume
+              Download Resume
             </a>
           </button>
         </ul>
@@ -109,7 +109,7 @@ const FrontPage = () => {
         <div className="user_links">
           <div
             onClick={() => {
-              window.open("https://github.com/DevCoderV1");
+              window.open('https://github.com/DevCoderV1')
             }}
             className="link_icon"
           >
@@ -117,7 +117,7 @@ const FrontPage = () => {
           </div>
           <div
             onClick={() => {
-              window.open("https://www.linkedin.com/in/micky-huang-762b2018a/");
+              window.open('https://www.linkedin.com/in/micky-huang-762b2018a/')
             }}
             className="link_icon"
           >
@@ -146,7 +146,7 @@ const FrontPage = () => {
               <img src={html} alt="javascript" />
             </div>
             <div className="skill_tag">
-              <span>HTML</span>
+              <span>HTML5</span>
             </div>
           </div>
           <div className="skills">
@@ -154,7 +154,7 @@ const FrontPage = () => {
               <img src={css} alt="javascript" />
             </div>
             <div className="skill_tag">
-              <span>CSS</span>
+              <span>CSS3</span>
             </div>
           </div>
           <div className="skills">
@@ -175,7 +175,7 @@ const FrontPage = () => {
           </div>
         </div>
         <div className="user_header">
-          <h2>Extras</h2>
+          <h2>Additional</h2>
         </div>
         <div className="user_skill">
           <div className="skills">
@@ -214,34 +214,27 @@ const FrontPage = () => {
           </div>
           <div className="user_summary">
             <p>
-              Hi, my name is Micky, a front-end web developer with experience in
-              web design and mobile responsive applications. I'm proficient in
-              Javascript, HTML, CSS, Node JS, and React JS but I will keep
-              advancing myself to learn more. I am a easy-going person to talk
-              and hangout. If we not able to work as a team but I would also be
-              happy to be your friend.
+              Hi, my name is Micky, a front-end web developer with experiences
+              in web design and mobile responsive website. I'm proficient in
+              programming language to create a websute. During my free time I
+              hangout with my friends, play games, read managa and cook when
+              hungry. I'm an easy going person and a team player at my work
+              place.
             </p>
           </div>
           <div className="user_contact">
             <span>Contact me if you're interested for a chat</span>
             <div className="contact_choice">
-              <div className="email">
-                <a
-                  href="mailto:mickyhuang8388@gmail.com"
-                  className="material-icons"
-                >
-                  &#xe0be;
-                </a>
-              </div>
+              <button>Email Me</button>
             </div>
           </div>
         </div>
       </section>
       <footer>
-        Copyright &#169; By Micky Huang {thisyear}-Present MyPortfolio
+        Copyright &#169; By Micky Huang 2020 - {thisyear} MyPortfolio
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default FrontPage;
+export default FrontPage
