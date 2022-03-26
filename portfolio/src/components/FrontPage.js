@@ -225,7 +225,11 @@ const FrontPage = () => {
           <div className="user_contact">
             <span>Contact me if you're interested for a chat</span>
             <div className="contact_choice">
-              <button onClick={window.open('mickyhuang8388@gmail.com')}>
+              <button
+                onClick={() => {
+                  window.open('mailto:mickyhuang8388@gmail.com')
+                }}
+              >
                 Email Me
               </button>
             </div>
