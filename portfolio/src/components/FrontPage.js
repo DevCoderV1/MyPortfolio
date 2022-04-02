@@ -7,9 +7,6 @@ import nodejs from '../images/nodejs.png'
 import html from '../images/html.png'
 import css from '../images/css.png'
 import react from '../images/reactjs.png'
-import git from '../images/git.png'
-import vs from '../images/visualcode.png'
-import photoshop from '../images/photoshop.png'
 import Resume from '../documents/MyResume.pdf'
 
 const year = new Date()
@@ -26,12 +23,10 @@ const FrontPage = () => {
     document.body.style.overflow = 'visible'
     SetActive(!isActive)
   }
-
   const introFocus = () => {
     document.body.style.overflow = 'visible'
     SetActive(!isActive)
   }
-
   const ToggleNav = () => {
     if (!isActive) {
       document.body.style.overflow = 'visible'
@@ -77,7 +72,7 @@ const FrontPage = () => {
             offset={-70}
             duration={500}
           >
-            Skills
+            Expertise
           </Link>
           <Link
             onClick={introFocus}
@@ -89,11 +84,11 @@ const FrontPage = () => {
             offset={-70}
             duration={500}
           >
-            Contact
+            Contact Me
           </Link>
           <button>
             <a href={Resume} download="Resume">
-              Download Resume
+              Resume
             </a>
           </button>
         </ul>
@@ -174,35 +169,6 @@ const FrontPage = () => {
             </div>
           </div>
         </div>
-        <div className="user_header">
-          <h2>Additional</h2>
-        </div>
-        <div className="user_skill">
-          <div className="skills">
-            <div className="skill_image">
-              <img src={git} alt="javascript" />
-            </div>
-            <div className="skill_tag">
-              <span>Github</span>
-            </div>
-          </div>
-          <div className="skills">
-            <div className="skill_image">
-              <img src={vs} alt="javascript" />
-            </div>
-            <div className="skill_tag">
-              <span>Visual Studio</span>
-            </div>
-          </div>
-          <div className="skills">
-            <div className="skill_image">
-              <img src={photoshop} alt="javascript" />
-            </div>
-            <div className="skill_tag">
-              <span>Photoshop</span>
-            </div>
-          </div>
-        </div>
       </section>
       <section className="user_intro_wrapper" id="intro">
         <div className="user_intro_header">
@@ -216,10 +182,8 @@ const FrontPage = () => {
             <p>
               Hi, my name is Micky, a front-end web developer with experiences
               in web design and mobile responsive website. I'm proficient in
-              programming language to create a websute. During my free time I
-              hangout with my friends, play games, read managa and cook when
-              hungry. I'm an easy going person and a team player at my work
-              place.
+              programming language to create a website. I'm passionate to work
+              in this field and hope to share my creations.
             </p>
           </div>
           <div className="user_contact">

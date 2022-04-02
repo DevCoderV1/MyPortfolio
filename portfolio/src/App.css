@@ -212,7 +212,7 @@ nav .hamburger div {
 .user_experience_wrapper {
   min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 80%;
@@ -235,10 +235,7 @@ nav .hamburger div {
 
 .user_experience_wrapper .user_header {
   color: black;
-  margin: 10px;
-  width: 80%;
-  text-align: center;
-  border-bottom: 1px solid black;
+  min-height: 15vh;
 }
 
 .user_experience_wrapper .user_header h2 {
@@ -255,6 +252,7 @@ nav .hamburger div {
   flex-wrap: wrap;
   align-items: stretch;
   width: 60%;
+  min-height: 85vh;
 }
 
 .user_experience_wrapper .user_skill > * {
@@ -274,8 +272,8 @@ nav .hamburger div {
 }
 
 .user_experience_wrapper .user_skill .skills .skill_image {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
 }
 
 .user_experience_wrapper .user_skill .skills .skill_image img {
