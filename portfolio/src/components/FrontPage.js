@@ -15,6 +15,10 @@ const thisyear = year.getFullYear()
 const FrontPage = () => {
   const [isActive, SetActive] = useState(true)
 
+  const linkfocus = () => {
+    document.body.style.overflow = 'visible'
+    SetActive(!isActive)
+  }
   const skillfocus = () => {
     document.body.style.overflow = 'visible'
     SetActive(!isActive)
@@ -50,6 +54,18 @@ const FrontPage = () => {
           <h1>MyPortfolio</h1>
         </div>
         <ul className={isActive ? 'link_bar' : 'link_bar_open'}>
+          <Link
+            onClick={linkfocus}
+            className="nav_btn"
+            activeClass="active"
+            to="link"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Links
+          </Link>
           <Link
             onClick={projectsfocus}
             className="nav_btn"
@@ -98,7 +114,7 @@ const FrontPage = () => {
           <div></div>
         </div>
       </nav>
-      <div className="user_wrapper">
+      <div className="user_wrapper" id="link">
         <h1>Micky Huang</h1>
         <span>Front-End Web Developer</span>
         <div className="user_links">

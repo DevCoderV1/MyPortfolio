@@ -55,7 +55,7 @@ nav .link_bar {
 
 nav .link_bar .nav_btn {
   list-style-type: none;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
   border: none;
   padding: 8px;
@@ -96,7 +96,7 @@ nav .link_bar_open {
 
 nav .link_bar_open .nav_btn {
   list-style-type: none;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
   border: none;
   padding: 8px;
@@ -407,7 +407,7 @@ footer {
     overflow-x: hidden;
   }
   nav .logo h1 {
-    font-size: 38px;
+    font-size: 2rem;
   }
   nav .link_bar {
     position: absolute;
@@ -434,7 +434,7 @@ footer {
   }
   nav .link_bar_open .nav_btn {
     list-style-type: none;
-    font-size: 24px;
+    font-size: 1rem;
     cursor: pointer;
     border: none;
     padding: 8px;
@@ -445,6 +445,9 @@ footer {
     border: none;
     font-family: 'Times New Roman', Times, serif;
     transition: 0.4s ease-in-out;
+    width: 25%;
+    text-align: center;
+    
   }
   nav .link_bar_open button {
     outline: none;
@@ -466,7 +469,7 @@ footer {
     display: block;
   }
   .user_wrapper h1 {
-    font-size: 40px;
+    font-size: 28px;
   }
   .user_wrapper span {
     font-size: 18px;
@@ -484,6 +487,14 @@ footer {
 }
 
 @media only screen and (max-width: 515px) {
+
+  .user_intro_wrapper .user_intro_header h2,
+  .user_experience_wrapper .user_header h2{
+    font-size: 24px;
+  }
+  .user_intro_wrapper .user_intro_container .user_summary p {
+    font-size: 14px;
+  }
   .user_experience_wrapper .user_skill .skills {
     width: 75px;
     height: 75px;
@@ -502,7 +513,7 @@ footer {
     color: black;
   }
   .user_experience_wrapper .user_skill .skills .skill_tag span {
-    font-size: 16px;
+    font-size: 12px;
   }
   .user_intro_wrapper .user_intro_container {
     width: 100%;
@@ -540,9 +551,7 @@ footer {
   .phone {
     display: block;
   }
-  .user_intro_wrapper .user_intro_container .user_summary p {
-    font-size: 1rem;
-  }
+ 
   .fa-linkedin-square:before,
   .fa-github:before {
     font-size: 3.5rem;
