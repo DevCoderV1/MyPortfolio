@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import frontpage from "./components/FrontPage";
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import frontpage from './components/FrontPage'
+import './App.css'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         </Switch>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

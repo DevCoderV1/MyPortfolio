@@ -431,6 +431,7 @@ footer {
     align-items: center;
     width: 100%;
     bottom: 0;
+    transform: translateX(0);
   }
   nav .link_bar_open .nav_btn {
     list-style-type: none;
@@ -447,7 +448,6 @@ footer {
     transition: 0.4s ease-in-out;
     width: 25%;
     text-align: center;
-    
   }
   nav .link_bar_open button {
     outline: none;
@@ -487,9 +487,8 @@ footer {
 }
 
 @media only screen and (max-width: 515px) {
-
   .user_intro_wrapper .user_intro_header h2,
-  .user_experience_wrapper .user_header h2{
+  .user_experience_wrapper .user_header h2 {
     font-size: 24px;
   }
   .user_intro_wrapper .user_intro_container .user_summary p {
@@ -551,7 +550,7 @@ footer {
   .phone {
     display: block;
   }
- 
+
   .fa-linkedin-square:before,
   .fa-github:before {
     font-size: 3.5rem;
